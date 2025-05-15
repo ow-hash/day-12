@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, use } from "react";
 
 interface Product {
     id: number;
@@ -42,24 +42,30 @@ interface Product {
     thumbnail: string;
 }
 
+interface ResolvedProductParams {
+    productId: number | string;
+}
+
 interface ProductDetailProps {
-    params: {
-        productId: number | string;
-    };
+    params: Promise<ResolvedProductParams>;
 }
 
 const ProductID = ({ params }: ProductDetailProps) => {
+    const resolvedParams = use(params);
+    const { productId } = resolvedParams;
+
     const [products, setProducts] = useState<Product | null>(null);
 
     useEffect(() => {
-        const fetchProducts = async () => {
-            const response = await fetch(`https://dummyjson.com/products/${params.productId}`);
-            const data = await response.json();
-            setProducts(data);
-        };
-
-        fetchProducts();
-    }, [params.productId]);
+        if (productId) {
+            const fetchProducts = async () => {
+                const response = await fetch(`https://dummyjson.com/products/${productId}`);
+                const data = await response.json();
+                setProducts(data);
+            };
+            fetchProducts();
+        }
+    }, [productId]);
 
     if (!products) {
         return <div className="flex items-center justify-center h-screen">Loading...</div>;
@@ -135,6 +141,5 @@ const ProductID = ({ params }: ProductDetailProps) => {
         </div>
     );
 };
-
 
 export default ProductID;
