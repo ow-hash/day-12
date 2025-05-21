@@ -1,0 +1,77 @@
+// File: components/StockCard.tsx
+"use client";
+
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowUpRight, ArrowDownRight, BarChart2 } from "lucide-react";
+
+interface StockCardProps {
+  name: string;
+  currentPrice: number;
+  percentChange: number;
+  volume: number;
+  high52w: number;
+  low52w: number;
+  marketCap: string;
+  peRatio: number;
+}
+
+export default function StockCard({
+  name,
+  currentPrice,
+  percentChange,
+  volume,
+  high52w,
+  low52w,
+  marketCap,
+  peRatio,
+}: StockCardProps) {
+  const isPositive = percentChange >= 0;
+
+  return (
+    <Card className="w-full h-full rounded-2xl shadow-md p-6 bg-white dark:bg-gray-950">
+      <CardContent className="flex flex-col gap-6 h-full"> {/* Increased gap */}
+        {/* Header */}
+        <div className="flex items-start justify-between"> {/* Align items to start for better vertical distribution if text wraps */}
+          <div>
+            <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-200">{name}</h3> {/* Increased font size */}
+            <p className="text-3xl font-bold text-gray-900 dark:text-white">${currentPrice.toFixed(2)}</p> {/* Increased font size */}
+          </div>
+          <div className={`flex items-center text-base font-medium ${isPositive ? "text-green-500" : "text-red-500"}`}> {/* Increased font size */}
+            {isPositive ? <ArrowUpRight size={20} /> : <ArrowDownRight size={20} />} {/* Increased icon size */}
+            <span className="ml-1.5">{percentChange}%</span> {/* Increased margin */}
+          </div>
+        </div>
+
+        {/* Details Grid */}
+        {/* Consider making this section grow to fill more space if needed */}
+        <div className="grid grid-cols-2 gap-x-6 gap-y-4 text-base text-gray-700 dark:text-gray-300 flex-grow"> {/* Increased gaps and font size, added flex-grow */}
+          <div>
+            <div className="font-semibold">Volume</div> {/* Changed font-medium to font-semibold for more emphasis */}
+            <div>{volume.toLocaleString()}</div>
+          </div>
+          <div>
+            <div className="font-semibold">Market Cap</div> {/* Changed font-medium to font-semibold */}
+            <div>{marketCap}</div>
+          </div>
+          <div>
+            <div className="font-semibold">52W High</div> {/* Changed font-medium to font-semibold */}
+            <div>${high52w}</div>
+          </div>
+          <div>
+            <div className="font-semibold">52W Low</div> {/* Changed font-medium to font-semibold */}
+            <div>${low52w}</div>
+          </div>
+          <div>
+            <div className="font-semibold">P/E Ratio</div> {/* Changed font-medium to font-semibold */}
+            <div>{peRatio}</div>
+          </div>
+        </div>
+
+        {/* Footer Icon */}
+        <div className="flex items-center justify-end mt-auto pt-4"> {/* mt-auto to push to bottom, added padding top */}
+          <BarChart2 size={24} className="text-gray-400 dark:text-gray-500" /> {/* Increased icon size */}
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
