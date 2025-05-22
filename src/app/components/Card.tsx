@@ -32,7 +32,7 @@ export default function StockCard({
 
         <div className="flex items-start justify-between">
           <div className="my-10">
-            <h3 className="text-4xl font-semibold text-gray-700 dark:text-gray-200 my-5">{name}</h3>
+            <h3 className="text-4xl font-semibold text-black dark:text-gray-200 my-5">{name}</h3>
             <p className="text-7xl font-bold text-gray-900 dark:text-white">${currentPrice.toFixed(2)}</p> 
           </div>
           <div className={`flex items-center text-base font-medium ${isPositive ? "text-green-500" : "text-red-500"}`}> 
