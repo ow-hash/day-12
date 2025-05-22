@@ -17,18 +17,12 @@ export default function DashboardPage() {
   
   return (
     <div className="p-6 min-h-screen bg-gray-100">
-      {/* Top Full-width Card */}
+
       <h2 className="text-7xl font-bold mb-5">AAPL <span className="text-[#facc15] animate-bounce inline-block">Stock Overview</span></h2>
       <p className="text-gray-600 text-3xl mb-7">Key metrics and performance for Apple Inc. (AAPL).</p>
-      <div className="bg-white rounded-2xl shadow p-6 mb-6">
-        <CustomLineHistChart />
-      </div>
 
-      {/* Middle Two Side-by-Side Cards */}
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        <div className="bg-white rounded-2xl shadow p-6">
-          <CustomHistChart />
-        </div>
         <div className="bg-white rounded-2xl shadow p-6 ">
           <StockCard
             name="AAPL"
@@ -42,7 +36,18 @@ export default function DashboardPage() {
           />
 
         </div>
+
+        <div className="bg-white rounded-2xl shadow p-6">
+          <CustomHistChart />
+        </div>
       </div>
+
+      {/* Top Full-width Card */}
+      <div className="bg-white rounded-2xl shadow p-6 mb-6">
+        <CustomLineHistChart />
+      </div>
+
+      {/* Middle Two Side-by-Side Cards */}
 
       {/* Bottom Full-width Card for News Carousel */}
       <div className="bg-white rounded-2xl shadow p-6 mb-6">
