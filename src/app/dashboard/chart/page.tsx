@@ -3,11 +3,8 @@ import StockCard from "@/app/components/Card";
 import { Component as CustomLineHistChart } from "@/app/components/Combined";
 import { CarouselDemo } from "@/app/components/Carousel";
 import insightData from "@/data.json"; 
-import { Component as RadialChart } from "@/app/components/RadialChart";
-import { Component as BarChart } from "@/app/components/Bar"; // Import the modified Bar component
 import { TrendingUp } from "lucide-react"; 
-// Card components are likely imported by BarChart and RadialChart themselves if they use ShadCN Card
-// import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"; 
+
 
 
 export default function DashboardPage() {
@@ -16,8 +13,8 @@ export default function DashboardPage() {
   const currentStats = aaplData.currentStats;
   const financialHighlights = aaplData.insightData.financialHighlights; 
 
-  // The placeholder BarChart const is no longer needed as we are importing the actual component
 
+  
   return (
     <div className="p-6 min-h-screen bg-gray-100">
       {/* Top Full-width Card */}
@@ -69,7 +66,7 @@ export default function DashboardPage() {
                     {metric.trend === "down" && <TrendingUp className="inline-block h-4 w-4 ml-1 text-red-500 transform rotate-180" />}
                   </p>
                 ))}
-                <p className="text-md text-gray-950 mt-2"><span className="text-[black] font-bold bg-[#facc15] py-1 px-2 rounded-xl">Conclude : </span>{highlight.summary}</p>
+                <p className="text-md text-gray-950 mt-2"><span className="text-[black] font-bold bg-[#facc15] py-1 px-2 rounded-xl mr-2">Conclude : </span>{highlight.summary}</p>
               </div>
             ))}
           </>

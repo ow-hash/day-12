@@ -24,7 +24,7 @@ import {
   ChartContainer,
   ChartTooltipContent,
 } from "@/components/ui/chart"
-import jsonData from "@/data.json" // Import the JSON data
+import jsonData from "@/data.json"
 
 // Transform the data
 const aaplData = jsonData.dailyData.AAPL;
@@ -58,13 +58,13 @@ export function Component() {
       <CardContent className="px-2 sm:p-6">
         <ChartContainer
           config={chartConfig}
-          className="aspect-auto h-[350px] w-full" // Adjusted height
+          className="aspect-auto h-[350px] w-full"
         >
           <ComposedChart
             data={chartData}
             margin={{
               top: 20, 
-              right: 40, // Increased right margin for volume YAxis
+              right: 40,
               left: 20,
               bottom: 5,
             }}
@@ -75,7 +75,7 @@ export function Component() {
               tickLine={false}
               axisLine={false}
               tickMargin={8}
-              minTickGap={32} // Adjust as needed for date density
+              minTickGap={32}
               tickFormatter={(value) => {
                 const date = new Date(value)
                 return date.toLocaleDateString("en-US", {
@@ -85,21 +85,21 @@ export function Component() {
               }}
             />
             <YAxis
-              yAxisId="left" // For Price
+              yAxisId="left"
               dataKey="price"
               stroke="black"
               tickFormatter={(value) => `$${value.toLocaleString()}`}
               name="Price"
-              domain={[dataMin => dataMin * 0.95, dataMax => dataMax * 1.05]} // Adjusts the Y-axis scale for price
+              domain={[dataMin => dataMin * 0.95, dataMax => dataMax * 1.05]}
             />
             <YAxis
               yAxisId="right" // For Volume
               orientation="right"
               dataKey="volume"
               stroke="#facc15"
-              tickFormatter={(value) => `${(value / 1000000).toFixed(1)}M`} // Format volume in millions
+              tickFormatter={(value) => `${(value / 1000000).toFixed(1)}M`}
               name="Volume"
-              domain={[0, (dataMax) => dataMax * 3]} // Add this line to make bars appear shorter
+              domain={[0, (dataMax) => dataMax * 3]}
             />
             <Tooltip
               content={
@@ -139,7 +139,7 @@ export function Component() {
             isAnimationActive={true}
               yAxisId="right"
               dataKey="volume"
-              fill="#facc15" // Changed to use CSS variable
+              fill="#facc15"
               name={chartConfig.volume.label}
             />
           </ComposedChart>

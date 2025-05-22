@@ -1,4 +1,3 @@
-// File: components/StockCard.tsx
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";
@@ -29,16 +28,16 @@ export default function StockCard({
 
   return (
     <Card className="w-full h-full rounded-2xl shadow-md p-6 bg-[#facc15] hover:scale-110 transition-transform duration-300 ease-in-out">
-      <CardContent className="flex flex-col gap-6 h-full"> {/* Increased gap */}
-        {/* Header */}
-        <div className="flex items-start justify-between"> {/* Align items to start for better vertical distribution if text wraps */}
+      <CardContent className="flex flex-col gap-6 h-full">
+
+        <div className="flex items-start justify-between">
           <div className="my-10">
-            <h3 className="text-4xl font-semibold text-gray-700 dark:text-gray-200 my-5">{name}</h3> {/* Increased font size */}
-            <p className="text-7xl font-bold text-gray-900 dark:text-white">${currentPrice.toFixed(2)}</p> {/* Increased font size */}
+            <h3 className="text-4xl font-semibold text-gray-700 dark:text-gray-200 my-5">{name}</h3>
+            <p className="text-7xl font-bold text-gray-900 dark:text-white">${currentPrice.toFixed(2)}</p> 
           </div>
-          <div className={`flex items-center text-base font-medium ${isPositive ? "text-green-500" : "text-red-500"}`}> {/* Increased font size */}
-            {isPositive ? <ArrowUpRight size={70}/> : <ArrowDownRight size={70}/>} {/* Increased icon size */}
-            <span className="text-2xl font-bold ml-1.5">{percentChange}%</span> {/* Increased margin */}
+          <div className={`flex items-center text-base font-medium ${isPositive ? "text-green-500" : "text-red-500"}`}> 
+            {isPositive ? <ArrowUpRight size={70}/> : <ArrowDownRight size={70}/>} 
+            <span className="text-2xl font-bold ml-1.5">{percentChange}%</span> 
           </div>
         </div>
 
