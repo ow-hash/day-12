@@ -50,7 +50,7 @@ export function Component() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>AAPL Stock Price and Volume</CardTitle>
+        <CardTitle className="text-xl font-bold">AAPL Stock <span className="text-[#facc15]">Price and Volume</span> </CardTitle>
         <CardDescription>
           Showing daily price (line) and volume (bar) for AAPL.
         </CardDescription>
@@ -87,21 +87,24 @@ export function Component() {
             <YAxis
               yAxisId="left" // For Price
               dataKey="price"
-              stroke="var(--color-price)"
+              stroke="black"
               tickFormatter={(value) => `$${value.toLocaleString()}`}
               name="Price"
+              domain={[dataMin => dataMin * 0.95, dataMax => dataMax * 1.05]} // Adjusts the Y-axis scale for price
             />
             <YAxis
               yAxisId="right" // For Volume
               orientation="right"
               dataKey="volume"
-              stroke="var(--color-volume)"
+              stroke="#facc15"
               tickFormatter={(value) => `${(value / 1000000).toFixed(1)}M`} // Format volume in millions
               name="Volume"
+              domain={[0, (dataMax) => dataMax * 3]} // Add this line to make bars appear shorter
             />
             <Tooltip
               content={
                 <ChartTooltipContent
+                  className="bg-[white] text-xl"
                   labelFormatter={(value) => {
                     return new Date(value).toLocaleDateString("en-US", {
                       month: "short",
@@ -127,15 +130,16 @@ export function Component() {
               dataKey="price"
               type="monotone"
               strokeWidth={2}
-              dot={false}
-              stroke="var(--color-price)"
+              dot={true}
+              stroke="#000000"
               name={chartConfig.price.label}
-            />
+
+              />
             <Bar
             isAnimationActive={true}
               yAxisId="right"
               dataKey="volume"
-              fill="hsl(var(--chart-2))" // Changed to use CSS variable
+              fill="#facc15" // Changed to use CSS variable
               name={chartConfig.volume.label}
             />
           </ComposedChart>

@@ -2,22 +2,22 @@
   "dailyData": {
     "AAPL": {
       "price": [
-        150, 102, 149, 152, 153, 154, 156, 157, 158, 159, 160, 162, 161, 159,
-        163, 165, 164, 166, 167, 168, 170, 172, 174, 173, 175, 176, 178, 180,
-        182, 184, 183, 185, 187, 189, 191, 190, 192, 194, 196, 198, 197, 196,
-        195, 194, 193, 192, 191, 190, 189, 188, 189, 191, 193, 195, 197, 198,
-        196, 194, 193, 195, 197, 198, 196, 195, 193, 192, 194, 195, 195, 196
+        188, 190, 190, 187, 192, 188, 190, 187, 192, 190, 189, 190, 191, 190,
+        191, 191, 192, 190, 188, 189, 191, 189, 190, 188, 190, 188, 192, 187,
+        191, 190, 191, 192, 189, 190, 188, 191, 189, 191, 191, 187, 188, 191,
+        188, 190, 185, 191, 186, 192, 191, 189, 189, 195, 189, 187, 187, 192,
+        190, 190, 192, 189, 189, 187, 189, 191, 190, 191, 186, 186, 190, 191
       ],
       "volume": [
-        1000000, 1050000, 990000, 1010000, 1030000, 1020000, 1070000, 1090000,
-        1110000, 1120000, 1130000, 1100000, 1140000, 1150000, 1120000, 1160000,
-        1170000, 1140000, 1180000, 1190000, 1225700, 1188929, 1236486, 1155990,
-        1202230, 1298408, 1337361, 1283866, 1386576, 1372710, 1276620, 1302153,
-        1315174, 1393085, 1434877, 1319687, 1306490, 1358750, 1453462, 1500000,
-        1425000, 1311000, 1206120, 1110830, 1022000, 940240, 893228, 866431,
-        805821, 730000, 781100, 835777, 894201, 956795, 1023771, 1095435,
-        1007790, 927167, 890080, 961286, 1038190, 1121245, 1031545, 1000600,
-        920552, 892935, 964370, 1012588, 1093595, 1163400
+        652000, 711000, 845000, 902000, 798000, 1087000, 1343000, 1198000,
+        1254000, 1291000, 978000, 860000, 912000, 1155000, 960000, 1138000,
+        910000, 1119000, 950000, 1227000, 940000, 895000, 1041000, 1009000,
+        1282000, 1379000, 1456000, 1211000, 880000, 1205000, 1164000, 1339000,
+        1398000, 870000, 810000, 1102000, 1191000, 1246000, 1493000, 1570000,
+        1424000, 1312000, 1060000, 1093000, 840000, 920000, 1035000, 755000,
+        700000, 960000, 1124000, 875000, 928000, 1005000, 870000, 1029000,
+        952000, 860000, 975000, 1083000, 1188000, 1092000, 987000, 940000,
+        1320000, 970000, 1360000, 1088000, 1156000
       ],
       "date": [
         "2025-05-01",
@@ -107,6 +107,106 @@
         "low52w": 102,
         "marketCap": "2.9T",
         "peRatio": 33.2
+      },
+      "news" :  [
+        {
+          "id": 1,
+          "title": "AAPL Announces New Product Lineup",
+          "source": "Tech News Daily",
+          "date": "2025-07-08",
+          "imageUrl": "https://photos5.appleinsider.com/gallery/63706-132538-iPhone-8-xl.jpg",
+          "summary": "Apple today unveiled its latest range of innovative products during a high-profile event, showcasing cutting-edge technology and design advancements aimed at redefining the user experience. The company introduced updates across its flagship product lines, including the iPhone, iPad, Mac, and Apple Watch, each featuring new hardware improvements, software enhancements, and deeper integration with Apple's expanding ecosystem. From improved performance and enhanced AI capabilities to more sustainable materials and sleek new designs, Apple emphasized its continued commitment to delivering intuitive, powerful tools for both personal and professional use. The announcements signal the company’s broader strategy to blend hardware, software, and services into a seamless digital experience, further strengthening its position at the forefront of consumer technology."
+        },
+        {
+          "id": 2,
+          "title": "Analysts Bullish on AAPL Stock",
+          "source": "Market Watch Today",
+          "date": "2025-07-07",
+          "imageUrl": "https://photos5.appleinsider.com/gallery/63678-132508-000-lede-MBP-with-Photos-xl.jpg",
+          "summary": "Market analysts are increasingly optimistic about Apple’s stock performance in the wake of the company’s recent announcements, which highlighted a new wave of innovative products and strategic advancements. The unveiling of upgraded devices and enhanced software features has reinforced investor confidence in Apple’s ability to drive consumer demand and maintain its competitive edge. Analysts point to strong fundamentals, robust product demand, and the company’s expanding ecosystem as key drivers of future growth. In particular, the integration of advanced AI capabilities, ecosystem-wide enhancements, and a renewed focus on services revenue are seen as potential catalysts for sustained stock appreciation. Several financial institutions have revised their price targets upward, citing Apple's continued innovation, brand loyalty, and ability to execute in a challenging macroeconomic environment."
+        },
+        {
+          "id": 3,
+          "title": "Apple's Commitment to Sustainability",
+          "source": "Green Tech Report",
+          "date": "2025-07-05",
+          "imageUrl": "https://www.investopedia.com/thmb/ytrsPYWysHiZ5qlSw4bFAJpt_G8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-2169268954-bb696fc0d2f64fc1a214fe55b58a7992.jpg",
+          "summary": "Apple has reiterated its strong commitment to environmental sustainability by unveiling a series of new initiatives and ambitious goals for the coming year. Building on its long-standing efforts to reduce its environmental footprint, the company announced expanded programs aimed at lowering carbon emissions, increasing the use of recycled and renewable materials, and achieving greater energy efficiency across its supply chain and product lines. Key highlights include plans to make more products with 100% recycled aluminum, rare earth elements, and cobalt, as well as increasing investment in clean energy projects around the world. Apple also emphasized its progress toward its goal of becoming carbon neutral across its entire business, manufacturing supply chain, and product life cycle by 2030. These efforts not only align with global climate targets but also reflect growing consumer and stakeholder expectations for corporate responsibility in the face of environmental challenges."
+        },
+        {
+          "id": 4,
+          "title": "Apple Expands Services Division with New Offerings",
+          "source": "Digital Trends",
+          "date": "2025-07-10",
+          "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "summary": "Apple is continuing its strategic efforts to diversify its revenue streams by significantly expanding its services division, signaling a broader shift beyond hardware sales. As part of this initiative, the company announced new subscription offerings in the areas of gaming and fitness, further cementing its presence in the digital lifestyle space. These new services are designed to integrate seamlessly with Apple’s existing ecosystem, providing users with more personalized and immersive experiences across their devices.Enhancements to established platforms such as Apple Music and iCloud were also revealed, featuring improved functionality, expanded content libraries, and deeper integration with other Apple products and services. By strengthening these platforms, Apple aims to foster greater customer loyalty and daily engagement, positioning services as a core pillar of its long-term growth strategy.This move toward a more robust services model not only provides Apple with a consistent stream of recurring revenue, but also helps mitigate fluctuations in hardware demand. Market analysts have responded positively, predicting that the expansion of Apple’s services will play a pivotal role in driving the company’s financial performance in the quarters ahead. Many view it as a savvy adaptation to changing consumer behavior, where content, connectivity, and convenience are increasingly valued alongside physical devices."
+        },
+        {
+          "id": 5,
+          "title": "New Apple Chip Promises Breakthrough Performance",
+          "source": "Chipset Chronicle",
+          "date": "2025-07-11",
+          "imageUrl": "https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/au/wp-content/uploads/2022/06/how-to-buy-apple-aapl-stocks-shares.jpg",
+          "summary": "Sources close to Apple's supply chain have revealed that the next-generation M-series chip is nearing release, signaling a major leap forward in the company’s custom silicon strategy. The upcoming chip—rumored to be part of the M4 lineup—is expected to offer unprecedented improvements in processing power, graphics performance, and energy efficiency, reinforcing Apple’s leadership in designing in-house processors that tightly integrate with its software ecosystem.Industry insiders suggest that this new silicon will likely make its debut in the next iterations of the MacBook Pro and iMac, which are anticipated to be announced within the coming months. These refreshed models are expected to deliver substantial performance gains, particularly in tasks requiring high computational loads such as video editing, 3D rendering, and machine learning. Creative professionals and power users, a core segment of Apple's Mac customer base, stand to benefit most from these advancements.This latest development continues Apple’s aggressive push to transition entirely away from Intel-based architectures, a move that began with the original M1 chip. By maintaining tight control over both hardware and software, Apple is not only achieving industry-leading benchmarks but also improving battery life and thermal performance across its devices. Analysts view the imminent launch as a critical moment in Apple’s ongoing silicon evolution—one that could further distinguish its Macs in a competitive PC market."
+        },
+        {
+          "id": 6,
+          "title": "Apple Faces Regulatory Scrutiny Over App Store Policies",
+          "source": "Policy & Regulation Review",
+          "date": "2025-07-12",
+          "imageUrl": "https://d.newsweek.com/en/full/2646141/fortnite-app.webp?w=790&f=dd4727f942986184efdde2c9dd040b7a",
+          "summary": "Regulatory bodies in several countries are ramping up their investigations into Apple's App Store practices, scrutinizing aspects of its business model that have come under increasing criticism in recent years. Central to these concerns are Apple’s commission rates, which are perceived by some as excessively high, as well as allegations of anti-competitive behavior linked to the company’s control over app distribution and the enforcement of restrictive policies that impact app developers. These issues have sparked debates on whether Apple’s practices stifle competition and harm consumers by limiting their choices. In particular, regulators are examining whether Apple's App Store policies give the company an unfair advantage over third-party developers, compelling them to pay significant fees for visibility on the platform. The investigations also focus on the mandatory use of Apple’s payment system and the company's refusal to allow alternative app stores or payment systems, especially for digital goods.Despite the growing scrutiny, Apple continues to defend its approach, asserting that the policies are in place to ensure user security, privacy, and the overall quality of apps available on the platform. The company argues that these measures help to protect consumers from fraudulent apps, data breaches, and other potential risks. However, as the investigations progress and public pressure mounts, there is increasing speculation that Apple may be forced to implement changes to the App Store’s business model."
+        },
+        {
+          "id": 7,
+          "title": "Apple Invests Heavily in Augmented Reality R&D",
+          "source": "Future Tech Insights",
+          "date": "2025-07-14",
+          "imageUrl": "https://s.yimg.com/uu/api/res/1.2/KYddvHkDOq1qglwe6Nzagw--~B/aD0xNDE0O3c9MjEyMTtzbT0xO2FwcGlkPXl0YWNoeW9u/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/d9334bb2d5b1bde737721f0f2e7670b4",
+          "summary": "Apple is reportedly investing heavily in its augmented reality (AR) research and development efforts, signaling its intent to become a dominant player in the emerging AR space. While the company has remained notably tight-lipped about the specifics of its AR initiatives, industry insiders and analysts suggest that Apple is in the advanced stages of developing a dedicated AR headset or smart glasses that could revolutionize the way users interact with digital content. This significant investment in AR technology highlights Apple’s long-term vision to lead the next wave of computing platforms, following its history of reshaping industries with groundbreaking products like the iPhone and the iPad. While details remain scarce, it is believed that Apple's AR devices will be deeply integrated into its ecosystem, offering seamless experiences that blend the physical and digital worlds. The AR hardware could also work in tandem with Apple's existing devices, such as iPhones and Macs, further enhancing the interconnected nature of its products. Apple’s AR push is not only seen as a way to create new hardware categories but also to build the underlying software infrastructure needed to support AR experiences. This includes potential advancements in ARKit, Apple’s augmented reality development framework, which could offer developers powerful new tools to create immersive apps and experiences for the platform."
+        },
+        {
+          "id": 8,
+          "title": "Apple's Quarterly Earnings Exceed Expectations",
+          "source": "Financial Times",
+          "date": "2025-07-15",
+          "imageUrl": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F818577%2Fbusiness-people-looking-at-a-tablet.jpg&w=700",
+          "summary": "Apple has announced its latest quarterly earnings, exceeding Wall Street's expectations and showcasing the company’s ability to thrive despite global economic uncertainties. The positive results were primarily driven by strong iPhone sales, which continue to be a cornerstone of Apple’s revenue, alongside impressive growth in its services division, which includes Apple Music, iCloud, and its expanding suite of subscription-based offerings. The company's services segment has become an increasingly important source of recurring revenue, further strengthening its financial performance. During the earnings call, Apple's CEO expressed confidence in the company's future growth, emphasizing the strength of its product pipeline and the ongoing resilience of consumer demand, even in the face of macroeconomic challenges like inflation and supply chain disruptions. He highlighted that Apple's diverse portfolio, including its innovative products and robust services ecosystem, positions the company well to navigate potential headwinds. In addition to the strong earnings report, Apple also provided positive guidance for the upcoming quarter, reassuring investors that its focus on innovation and customer satisfaction would continue to drive solid financial results. Following the announcement, Apple's stock price saw a notable uptick in after-hours trading, reflecting investor optimism about the company's ability to maintain momentum and generate sustained growth in the quarters ahead."
+        }
+      ],
+      "insightData" : {
+        "financialHighlights": [
+          {
+            "id": "profitability",
+            "title": "Profitability Insights",
+            "metrics": [
+              {"label": "Gross Profit Margin", "value": "45.8%", "trend": "up"},
+              {"label": "Net Profit Margin", "value": "25.2%", "trend": "stable"},
+              {"label": "Return on Equity (ROE)", "value": "147.3%", "trend": "up"}
+            ],
+            "summary": "Apple continues to demonstrate strong profitability and efficient capital use."
+          },
+          {
+            "id": "efficiency",
+            "title": "Operational Efficiency",
+            "metrics": [
+              {"label": "Inventory Turnover", "value": "39.5", "trend": "stable"},
+              {"label": "Asset Turnover", "value": "0.85", "trend": "down"},
+              {"label": "Days Sales Outstanding", "value": "25 days", "trend": "stable"}
+            ],
+            "summary": "Operational metrics show consistent inventory management with a slight decrease in asset turnover."
+          },
+          {
+            "id": "shareholderValue",
+            "title": "Shareholder Value",
+            "metrics": [
+              {"label": "EPS Growth (YoY)", "value": "12.5%", "trend": "up"},
+              {"label": "Dividend Yield", "value": "0.52%", "trend": "stable"},
+              {"label": "Price/Book (P/B) Ratio", "value": "42.1", "trend": "up"}
+            ],
+            "summary": "Positive EPS growth and a stable dividend yield contribute to shareholder value."
+          }
+        ]
       }
     }
   }

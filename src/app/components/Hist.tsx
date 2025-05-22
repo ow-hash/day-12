@@ -83,7 +83,7 @@ export function Component() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>AAPL Stock Daily Returns Distribution</CardTitle>
+        <CardTitle className="font-bold text-xl">AAPL Stock <span className="text-[#facc15]">Daily Returns</span> Distribution</CardTitle>
         <CardDescription>
           Histogram of daily percentage returns for AAPL stock.
         </CardDescription>
@@ -111,9 +111,9 @@ export function Component() {
             <YAxis dataKey="frequency" allowDecimals={false} />
             <ChartTooltip
               cursor={false}
-              content={<ChartTooltipContent />} // Shows bin and frequency
+              content={<ChartTooltipContent className="bg-[white] text-xl" />} // Shows bin and frequency
             />
-            <Bar dataKey="frequency" fill="var(--color-frequency)" radius={8}>
+            <Bar dataKey="frequency" fill="#facc15" radius={8}>
               <LabelList
                 position="top"
                 offset={8}

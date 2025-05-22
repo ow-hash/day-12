@@ -28,42 +28,42 @@ export default function StockCard({
   const isPositive = percentChange >= 0;
 
   return (
-    <Card className="w-full h-full rounded-2xl shadow-md p-6 bg-white dark:bg-gray-950">
+    <Card className="w-full h-full rounded-2xl shadow-md p-6 bg-[#facc15] hover:scale-110 transition-transform duration-300 ease-in-out">
       <CardContent className="flex flex-col gap-6 h-full"> {/* Increased gap */}
         {/* Header */}
         <div className="flex items-start justify-between"> {/* Align items to start for better vertical distribution if text wraps */}
-          <div>
-            <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-200">{name}</h3> {/* Increased font size */}
-            <p className="text-3xl font-bold text-gray-900 dark:text-white">${currentPrice.toFixed(2)}</p> {/* Increased font size */}
+          <div className="my-10">
+            <h3 className="text-4xl font-semibold text-gray-700 dark:text-gray-200 my-5">{name}</h3> {/* Increased font size */}
+            <p className="text-7xl font-bold text-gray-900 dark:text-white">${currentPrice.toFixed(2)}</p> {/* Increased font size */}
           </div>
           <div className={`flex items-center text-base font-medium ${isPositive ? "text-green-500" : "text-red-500"}`}> {/* Increased font size */}
-            {isPositive ? <ArrowUpRight size={20} /> : <ArrowDownRight size={20} />} {/* Increased icon size */}
-            <span className="ml-1.5">{percentChange}%</span> {/* Increased margin */}
+            {isPositive ? <ArrowUpRight size={70}/> : <ArrowDownRight size={70}/>} {/* Increased icon size */}
+            <span className="text-2xl font-bold ml-1.5">{percentChange}%</span> {/* Increased margin */}
           </div>
         </div>
 
         {/* Details Grid */}
         {/* Consider making this section grow to fill more space if needed */}
-        <div className="grid grid-cols-2 gap-x-6 gap-y-4 text-base text-gray-700 dark:text-gray-300 flex-grow"> {/* Increased gaps and font size, added flex-grow */}
+        <div className="grid grid-cols-2 gap-x-6 gap-y-4 text-base text-gray-950 dark:text-gray-300 flex-grow"> {/* Increased gaps and font size, added flex-grow */}
           <div>
             <div className="font-semibold">Volume</div> {/* Changed font-medium to font-semibold for more emphasis */}
-            <div>{volume.toLocaleString()}</div>
+            <div className="text-2xl font-bold">{volume.toLocaleString()}</div>
           </div>
           <div>
             <div className="font-semibold">Market Cap</div> {/* Changed font-medium to font-semibold */}
-            <div>{marketCap}</div>
+            <div className="text-2xl font-bold">{marketCap}</div>
           </div>
           <div>
             <div className="font-semibold">52W High</div> {/* Changed font-medium to font-semibold */}
-            <div>${high52w}</div>
+            <div className="text-2xl font-bold">${high52w}</div>
           </div>
           <div>
             <div className="font-semibold">52W Low</div> {/* Changed font-medium to font-semibold */}
-            <div>${low52w}</div>
+            <div className="text-2xl font-bold">${low52w}</div>
           </div>
           <div>
             <div className="font-semibold">P/E Ratio</div> {/* Changed font-medium to font-semibold */}
-            <div>{peRatio}</div>
+            <div className="text-2xl font-bold">{peRatio}</div>
           </div>
         </div>
 
