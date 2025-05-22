@@ -24,6 +24,9 @@ export default function StockCard({
   marketCap,
   peRatio,
 }: StockCardProps) {
+
+
+  
   const isPositive = percentChange >= 0;
 
   return (
