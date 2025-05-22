@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AAPL Stock Dashboard
 
-## Getting Started
+This project is a web-based dashboard designed to display and visualize key financial data and news for Apple Inc. (AAPL) stock. It provides an overview of current stock performance, historical trends, return distributions, and relevant news articles.
 
-First, run the development server:
+## Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+*   **Stock Overview Card:** Displays current price, percentage change, volume, 52-week high/low, market cap, and P/E ratio for AAPL.
+*   **Combined Price and Volume Chart:** A time-series chart showing daily closing prices (line chart) and trading volume (bar chart) for AAPL.
+*   **Daily Returns Histogram:** Visualizes the distribution of daily percentage returns for AAPL stock.
+*   **News Carousel:** Presents recent news articles related to AAPL, including titles, sources, dates, images, and summaries.
+*   **Financial Highlights:** Shows key financial metrics and insights categorized into profitability, operational efficiency, and shareholder value.
+*   **Interactive UI:** Components include hover effects for data cards and image zoom in the news carousel.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*   **Next.js:** React framework for server-side rendering and static site generation.
+*   **React:** JavaScript library for building user interfaces.
+*   **TypeScript:** Superset of JavaScript adding static typing.
+*   **Tailwind CSS:** Utility-first CSS framework for styling.
+*   **Shadcn UI:** Re-usable UI components (Cards, Carousel, Charts).
+*   **Recharts:** A composable charting library for React.
+*   **Lucide React:** Icon library.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Data Source
 
-## Learn More
+The application uses a local `data.json` file which contains:
+*   Daily historical price and volume data for AAPL.
+*   Current stock statistics.
+*   A collection of news articles with metadata.
+*   Financial insight data.
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure (Key Components)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*   `src/app/dashboard/chart/page.tsx`: Main dashboard page assembling various components.
+*   `src/app/components/`:
+    *   `Card.tsx`: Displays current stock statistics.
+    *   `Combined.tsx`: Renders the combined price and volume chart.
+    *   `Hist.tsx`: Renders the daily returns histogram.
+    *   `Carousel.tsx`: Implements the news carousel.
+*   `src/components/ui/`: Contains UI primitives like `chart.tsx` (custom chart components based on Recharts and Shadcn UI).
+*   `src/data.json`: Static data file for the application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+*   `src/components/ui/`: Contains UI primitives like `chart.tsx` (custom chart components based on Recharts and Shadcn UI).
+*   `src/data.json`: Static data file for the application.
 
-## Deploy on Vercel
+## Setup and Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run this project locally, follow these steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1.  **Clone the repository (if applicable):**
+    ```bash
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
+
+2.  **Install dependencies:**
+    Open your terminal in the project root directory and run:
+    ```bash
+    npm install
+    ```
+    or if you are using Yarn:
+    ```bash
+    yarn install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+    or if you are using Yarn:
+    ```bash
+    yarn dev
+    ```
+
+4.  **Open your browser:**
+    Navigate to `http://localhost:3000` (or the port specified in your terminal) to view the application.
+
+---
