@@ -6,6 +6,9 @@ import insightData from "@/data.json";
 import { TrendingUp } from "lucide-react"; 
 import CardInfo from "@/app/components/CardInfo"; // Added import
 
+
+
+
 export default function DashboardPage() {
 
   const aaplData = insightData.dailyData.AAPL;

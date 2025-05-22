@@ -5,7 +5,7 @@ import { TrendingUp } from "lucide-react";
 interface Metric {
   label: string;
   value: string;
-  trend?: "up" | "down";
+  trend?: string;
 }
 
 interface FinancialHighlight {

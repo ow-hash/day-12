@@ -26,7 +26,7 @@ import {
 } from "@/components/ui/chart"
 import jsonData from "@/data.json"
 
-// Transform the data
+
 const aaplData = jsonData.dailyData.AAPL;
 const chartData = aaplData.date.map((dateString, index) => ({
   date: dateString,
