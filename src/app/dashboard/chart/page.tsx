@@ -22,7 +22,7 @@ export default function DashboardPage() {
       <p className="text-gray-600 text-3xl mb-7">Key metrics and performance for Apple Inc. (AAPL).</p>
 
       {/* Top Two Side-by-Side Cards */}
-      <div className="grid grid-cols-2 gap-6 mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div className="bg-white rounded-2xl shadow p-6 ">
           <StockCard
             name="AAPL"
