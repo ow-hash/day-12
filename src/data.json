@@ -188,7 +188,7 @@
               {
                 "label": "Net Profit Margin",
                 "value": "25.2%",
-                "trend": "stable"
+                "trend": "down"
               },
               {
                 "label": "Return on Equity (ROE)",
@@ -205,13 +205,13 @@
               {
                 "label": "Inventory Turnover",
                 "value": "39.5",
-                "trend": "stable"
+                "trend": "up"
               },
               { "label": "Asset Turnover", "value": "0.85", "trend": "down" },
               {
                 "label": "Days Sales Outstanding",
                 "value": "25 days",
-                "trend": "stable"
+                "trend": "down"
               }
             ],
             "summary": "Operational metrics show consistent inventory management with a slight decrease in asset turnover."
@@ -224,7 +224,7 @@
               {
                 "label": "Dividend Yield",
                 "value": "0.52%",
-                "trend": "stable"
+                "trend": "down"
               },
               {
                 "label": "Price/Book (P/B) Ratio",
