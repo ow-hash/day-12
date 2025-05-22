@@ -108,7 +108,7 @@
         "marketCap": "2.9T",
         "peRatio": 33.2
       },
-      "news" :  [
+      "news": [
         {
           "id": 1,
           "title": "AAPL Announces New Product Lineup",
@@ -174,15 +174,27 @@
           "summary": "Apple has announced its latest quarterly earnings, exceeding Wall Street's expectations and showcasing the company’s ability to thrive despite global economic uncertainties. The positive results were primarily driven by strong iPhone sales, which continue to be a cornerstone of Apple’s revenue, alongside impressive growth in its services division, which includes Apple Music, iCloud, and its expanding suite of subscription-based offerings. The company's services segment has become an increasingly important source of recurring revenue, further strengthening its financial performance. During the earnings call, Apple's CEO expressed confidence in the company's future growth, emphasizing the strength of its product pipeline and the ongoing resilience of consumer demand, even in the face of macroeconomic challenges like inflation and supply chain disruptions. He highlighted that Apple's diverse portfolio, including its innovative products and robust services ecosystem, positions the company well to navigate potential headwinds. In addition to the strong earnings report, Apple also provided positive guidance for the upcoming quarter, reassuring investors that its focus on innovation and customer satisfaction would continue to drive solid financial results. Following the announcement, Apple's stock price saw a notable uptick in after-hours trading, reflecting investor optimism about the company's ability to maintain momentum and generate sustained growth in the quarters ahead."
         }
       ],
-      "insightData" : {
+      "insightData": {
         "financialHighlights": [
           {
             "id": "profitability",
             "title": "Profitability Insights",
             "metrics": [
-              {"label": "Gross Profit Margin", "value": "45.8%", "trend": "up"},
-              {"label": "Net Profit Margin", "value": "25.2%", "trend": "stable"},
-              {"label": "Return on Equity (ROE)", "value": "147.3%", "trend": "up"}
+              {
+                "label": "Gross Profit Margin",
+                "value": "45.8%",
+                "trend": "up"
+              },
+              {
+                "label": "Net Profit Margin",
+                "value": "25.2%",
+                "trend": "stable"
+              },
+              {
+                "label": "Return on Equity (ROE)",
+                "value": "147.3%",
+                "trend": "up"
+              }
             ],
             "summary": "Apple continues to demonstrate strong profitability and efficient capital use."
           },
@@ -190,9 +202,17 @@
             "id": "efficiency",
             "title": "Operational Efficiency",
             "metrics": [
-              {"label": "Inventory Turnover", "value": "39.5", "trend": "stable"},
-              {"label": "Asset Turnover", "value": "0.85", "trend": "down"},
-              {"label": "Days Sales Outstanding", "value": "25 days", "trend": "stable"}
+              {
+                "label": "Inventory Turnover",
+                "value": "39.5",
+                "trend": "stable"
+              },
+              { "label": "Asset Turnover", "value": "0.85", "trend": "down" },
+              {
+                "label": "Days Sales Outstanding",
+                "value": "25 days",
+                "trend": "stable"
+              }
             ],
             "summary": "Operational metrics show consistent inventory management with a slight decrease in asset turnover."
           },
@@ -200,9 +220,17 @@
             "id": "shareholderValue",
             "title": "Shareholder Value",
             "metrics": [
-              {"label": "EPS Growth (YoY)", "value": "12.5%", "trend": "up"},
-              {"label": "Dividend Yield", "value": "0.52%", "trend": "stable"},
-              {"label": "Price/Book (P/B) Ratio", "value": "42.1", "trend": "up"}
+              { "label": "EPS Growth (YoY)", "value": "12.5%", "trend": "up" },
+              {
+                "label": "Dividend Yield",
+                "value": "0.52%",
+                "trend": "stable"
+              },
+              {
+                "label": "Price/Book (P/B) Ratio",
+                "value": "42.1",
+                "trend": "up"
+              }
             ],
             "summary": "Positive EPS growth and a stable dividend yield contribute to shareholder value."
           }

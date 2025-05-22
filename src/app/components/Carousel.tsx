@@ -13,7 +13,7 @@ import newsData from '@/data.json';
 
 
 
-export function CarouselDemo() {
+export function CustomCarousel() {
   const aaplNews = newsData.dailyData.AAPL.news;
 
   return (
